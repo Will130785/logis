@@ -1,0 +1,20 @@
+.navbar {
+
+    &-brand {
+        font-size: 4rem;
+    }
+}
+
+.navbar-light {
+
+    .navbar-nav {
+
+        .nav-link {
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0 1.5rem;
+            color: $color-white;
+        }
+    }
+}

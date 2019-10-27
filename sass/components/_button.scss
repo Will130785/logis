@@ -1,0 +1,17 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 2rem 5rem;
+        font-size: 2rem;
+        background-color: $color-orange;
+        text-transform: uppercase;
+        color: $color-white;
+        letter-spacing: .8rem;
+    }
+
+    &:hover {
+        background-color: rgba($color-orange, 0);
+        border: .2rem solid $color-white;
+    }
+}
