@@ -13,3 +13,14 @@
 .fa-check {
     color: greenyellow;
 }
+
+.instructions__heading-box{
+    text-align: center;
+    &--heading {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $color-orange;
+        padding: 8rem 0;
+    }
+}

@@ -1,7 +1,10 @@
 .about {
     padding: 8rem 0;
 
-    &-image {
-        height: 75%;
+    &__img {
+
+        &--pic {
+            width: 75%;
+        }
     }
 }
