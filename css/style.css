@@ -60,6 +60,9 @@ p {
   background-color: rgba(241, 104, 33, 0);
   border: 0.2rem solid #fff; }
 
+.btn-blog:hover {
+  background-color: #8f2600; }
+
 .navbar-brand {
   font-size: 4rem; }
 
@@ -187,3 +190,24 @@ p {
   .services__text--link {
     font-size: 1.6rem;
     color: #f16821; }
+
+.blog__content--title {
+  color: #f16821;
+  margin-bottom: 1.5rem; }
+
+.blog__content--img {
+  width: 100%;
+  margin-bottom: 3rem; }
+
+.blog__content--info {
+  margin-bottom: 3rem;
+  color: #d3d3d3;
+  font-size: 1.6rem; }
+  .blog__content--info span {
+    padding-right: 2rem; }
+  .blog__content--info-link {
+    color: #f16821; }
+
+.btn-box {
+  text-align: center;
+  margin-bottom: 8rem; }

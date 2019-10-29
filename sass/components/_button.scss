@@ -15,3 +15,10 @@
         border: .2rem solid $color-white;
     }
 }
+
+.btn-blog {
+
+    &:hover {
+        background-color: rgb(143, 38, 0);
+    }
+}

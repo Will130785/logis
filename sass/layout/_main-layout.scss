@@ -99,3 +99,41 @@
         }
     }
 }
+
+
+.blog {
+
+    &__content {
+
+
+        &--title {
+            color: $color-orange;
+            margin-bottom: 1.5rem;
+        }
+
+        &--img {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        &--info {
+            margin-bottom: 3rem;
+            color: $color-light-grey;
+            font-size: 1.6rem;
+
+            span {
+                padding-right: 2rem;
+            }
+
+            &-link {
+                color: $color-orange;
+            }
+        }
+
+    }
+}
+
+.btn-box {
+    text-align: center;
+    margin-bottom: 8rem;
+}
