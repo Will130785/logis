@@ -137,3 +137,36 @@
     text-align: center;
     margin-bottom: 8rem;
 }
+
+
+.contact {
+    background-color: $color-lighter-grey;
+    padding-bottom: 8rem;
+
+    &__details {
+        background-color: $color-white;
+        padding: 2rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        &--address {
+
+
+            &-para {
+                color: $color-light-grey;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--more {
+           
+            &-para {
+                color: $color-light-grey;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+}
