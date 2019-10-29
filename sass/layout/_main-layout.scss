@@ -1,0 +1,101 @@
+.about {
+    padding: 8rem 0;
+
+    &__img {
+
+        &--pic {
+            width: 75%;
+        }
+    }
+}
+
+.instructions {
+    margin: 8rem 0;
+    background-image: url("../../img/blog_2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+
+    &__content {
+        color: $color-white;
+        
+        P {
+            color: $color-white;
+        }
+
+        &--num {
+            background-color: $color-orange;
+            border: .3rem solid $color-white;
+            border-radius: 50%;
+            height: 5rem;
+            width: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            color: $color-white;
+        }
+    }
+}
+
+.team {
+    padding-bottom: 8rem;
+
+    &__content {
+        
+    }
+
+    &__img {
+        width: 70%;
+        border-radius: 50%;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.social {
+    background-color: $color-medium-grey;
+    font-size: 2rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: $color-dark-grey;
+    }
+}
+
+.services-col {
+    display: flex;
+}
+
+.services {
+    background-color: $color-lighter-grey;
+    padding-bottom: 8rem;
+
+    &__icon {
+        font-size: 5rem;
+        color: $color-orange;
+        margin-right: 2rem;
+    }
+
+    &__text {
+
+
+        &--link {
+            font-size: 1.6rem;
+            color: $color-orange;
+        }
+    }
+}

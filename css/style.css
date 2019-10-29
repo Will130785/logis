@@ -23,6 +23,9 @@ html {
 .u-margin-bottom-small {
   margin-bottom: 2.5rem; }
 
+p {
+  font-size: 1.6rem; }
+
 .about__heading {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -30,7 +33,6 @@ html {
   color: #f16821; }
 
 .paragraph {
-  font-size: 1.6rem;
   color: #4d4d4d; }
 
 .fa-check {
@@ -66,11 +68,6 @@ html {
   font-weight: 700;
   padding: 0 1.5rem;
   color: #fff; }
-
-.about {
-  padding: 8rem 0; }
-  .about__img--pic {
-    width: 75%; }
 
 .row {
   width: 130rem;
@@ -124,6 +121,11 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100vh; }
 
+.about {
+  padding: 8rem 0; }
+  .about__img--pic {
+    width: 75%; }
+
 .instructions {
   margin: 8rem 0;
   background-image: url("../../img/blog_2.jpg");
@@ -148,12 +150,17 @@ html {
       font-size: 1.6rem;
       color: #fff; }
 
-.team__img {
-  width: 80%;
-  border-radius: 50%; }
+.team {
+  padding-bottom: 8rem; }
+  .team__img {
+    width: 70%;
+    border-radius: 50%;
+    transition: all .5s; }
+    .team__img:hover {
+      transform: scale(1.1); }
 
 .social {
-  background-color: #4d4d4d;
+  background-color: #adabab;
   font-size: 2rem;
   height: 5rem;
   width: 5rem;
@@ -163,3 +170,20 @@ html {
   justify-content: center;
   align-items: center;
   color: #fff; }
+  .social:hover {
+    transform: scale(1.1);
+    background-color: #4d4d4d; }
+
+.services-col {
+  display: flex; }
+
+.services {
+  background-color: #f0f0f0;
+  padding-bottom: 8rem; }
+  .services__icon {
+    font-size: 5rem;
+    color: #f16821;
+    margin-right: 2rem; }
+  .services__text--link {
+    font-size: 1.6rem;
+    color: #f16821; }
