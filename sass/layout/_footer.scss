@@ -1,0 +1,13 @@
+.footer {
+
+    &__content {
+        background-color: $color-dark-grey;
+        padding: 8rem 0;
+        text-align: center;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        color: $color-white;
+    }
+}

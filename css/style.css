@@ -30,7 +30,10 @@ p {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #f16821; }
+  color: #f16821;
+  transition: all .5s; }
+  .about__heading:hover {
+    transform: skewX(15deg); }
 
 .paragraph {
   color: #4d4d4d; }
@@ -45,7 +48,10 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     color: #f16821;
-    padding: 8rem 0; }
+    padding: 8rem 0;
+    transition: all .5s; }
+    .instructions__heading-box--heading:hover {
+      transform: skewX(15deg); }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -70,6 +76,15 @@ p {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0 1.5rem;
+  color: #fff; }
+
+.footer__content {
+  background-color: #4d4d4d;
+  padding: 8rem 0;
+  text-align: center; }
+
+.footer__paragraph {
+  font-size: 1.6rem;
   color: #fff; }
 
 .row {
@@ -154,6 +169,8 @@ p {
       align-items: center;
       font-size: 1.6rem;
       color: #fff; }
+      .instructions__content--num:hover {
+        transform: scale(1.1); }
 
 .team {
   padding-bottom: 8rem; }
@@ -199,7 +216,10 @@ p {
 
 .blog__content--img {
   width: 100%;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  transition: all .5s; }
+  .blog__content--img:hover {
+    transform: scale(1.1); }
 
 .blog__content--info {
   margin-bottom: 3rem;
