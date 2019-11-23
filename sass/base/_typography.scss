@@ -31,6 +31,10 @@ p {
         color: $color-orange;
         padding: 8rem 0;
         transition: all .5s;
+
+        @include respond(phone) {
+            padding: 4rem;
+        }
         
         &:hover {
             transform: skewX(15deg);

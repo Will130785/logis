@@ -1,3 +1,16 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tab-port
+900 - 1200:     Tab-land
+[1200 - 1800] this is where the normal styles apply
+1800px + :      Big-desktop
+
+$breakpoint argument options
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -13,6 +26,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
@@ -50,6 +75,9 @@ p {
     color: #f16821;
     padding: 8rem 0;
     transition: all .5s; }
+    @media (max-width: 37.5em) {
+      .instructions__heading-box--heading {
+        padding: 4rem; } }
     .instructions__heading-box--heading:hover {
       transform: skewX(15deg); }
 
@@ -68,6 +96,10 @@ p {
 
 .btn-blog:hover {
   background-color: #8f2600; }
+
+.form-style {
+  padding: 2rem;
+  width: 100%; }
 
 .navbar-brand {
   font-size: 4rem; }
@@ -88,7 +120,7 @@ p {
   color: #fff; }
 
 .row {
-  width: 130rem;
+  max-width: 118rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -98,8 +130,14 @@ p {
     clear: both; }
   .row [class^="col-"] {
     float: left; }
+    @media (max-width: 37.5em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 37.5em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin: 0; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -143,6 +181,9 @@ p {
 
 .about {
   padding: 8rem 0; }
+  @media (max-width: 37.5em) {
+    .about__img {
+      display: none; } }
   .about__img--pic {
     width: 75%; }
 
@@ -156,8 +197,18 @@ p {
   position: relative; }
   .instructions__content {
     color: #fff; }
+    @media (max-width: 37.5em) {
+      .instructions__content {
+        text-align: center; } }
     .instructions__content P {
       color: #fff; }
+      @media (max-width: 37.5em) {
+        .instructions__content P {
+          margin: 1rem;
+          font-size: 1rem; } }
+    @media (max-width: 37.5em) {
+      .instructions__content--title {
+        margin: 1rem; } }
     .instructions__content--num {
       background-color: #f16821;
       border: 0.3rem solid #fff;
@@ -169,15 +220,29 @@ p {
       align-items: center;
       font-size: 1.6rem;
       color: #fff; }
+      @media (max-width: 37.5em) {
+        .instructions__content--num {
+          margin: 0 auto;
+          height: 2.5rem;
+          width: 2.5rem;
+          border: 0.1rem solid #fff; } }
       .instructions__content--num:hover {
         transform: scale(1.1); }
 
 .team {
   padding-bottom: 8rem; }
+  @media (max-width: 37.5em) {
+    .team__content {
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
   .team__img {
     width: 70%;
     border-radius: 50%;
     transition: all .5s; }
+    @media (max-width: 37.5em) {
+      .team__img {
+        width: 20%; } }
     .team__img:hover {
       transform: scale(1.1); }
 
