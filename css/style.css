@@ -121,7 +121,8 @@ p {
 
 .row {
   max-width: 118rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 2rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
